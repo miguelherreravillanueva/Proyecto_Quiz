@@ -130,9 +130,8 @@ function startGame() {
     startButton.classList.add("hide");
     questionIndex = 0;
     questionContainer.classList.remove("hide");
-
+    setNextQuestion();
 }
-
 
 function showQuestion(questionGeneral) {
     question.innerText = questionGeneral.question;
@@ -156,6 +155,30 @@ function showQuestion(questionGeneral) {
     });
 }
 
-showQuestion(questions[0])
+function setNextQuestion() {
+    showQuestion(questions[questionIndex]);
+}
+
+function setStatusClass(element, correct) {
+    if (correct) {
+        element.classList.add("correct");
+    } else {
+        element.classList.add("wrong");
+    }
+}
+
+function selectAnswer(){
+    Array.from(answerButtons.children).forEach((button) => {
+        setStatusClass(button, button.dataset.correct);
+    });
+    if (questions.length > questionIndex + 1){
+        nextButton.classList.remove("hide");
+    } else{
+        startButton.innerText = "Volver a comenzar";
+        startButton.classList.remove("hide");
+    }
+    
+}
 
 startButton.addEventListener("click", startGame);
+
