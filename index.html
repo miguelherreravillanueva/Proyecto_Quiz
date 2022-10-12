@@ -1,33 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Quiz Miguel & Daniel</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-<body>
-    <div id="question-container">
-        <br>
-        <div id="question">Preguntas</div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Proyecto Quiz ~Dani & Miguel~</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <span id="mainCard">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/triviados.jpg.webp" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">¡Que comience el juego!</h5>
+                <div class="controls">
+                   <button type="button" id="start-btn" class="btn btn-primary">
+                  ¡Vamos!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </span>
+
+
+      <span id="questionCard">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/FLZ336533ZCN3B52M43UXM2JFM.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Preguntas</h5>
+                <div class="controls">
+                    <div id="question-container">
+                        <div id="question"></div>
+                        <div id="answer-buttons"></div>
+                      </div>
+                  <button type="button" id="next-btn" class="hide btn btn-primary">Siguiente</button>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </span>
+
+    
+      <span id="resultCard">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/result_-rkmrc-1-600x240.jpg"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Resultados</h5>
+                <button type="button" class="btn btn-primary">
+                  Mira tu resultado
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </span>
+
+      -->
+
+      <!-- ¿Esto tiene que ir dentro de la Card o se enlaza directamente desde el .js? -->
+
+      <!-- <div id="question-container">
+        <br />
+        <div id="question"></div>
         <div id="answer-buttons"></div>
+      </div> -->
 
-    </div>
-
-    <div class="controls">
-        <br>
+      <!-- <div class="controls">
+        <br />
         <button id="start-btn">Comienzo</button>
-        <br>
+        <br />
         <button id="next-btn" class="hide">Siguiente</button>
+      </div> -->
 
-    </div>
-
-
-
-    <script src="main.js"></script>
-</body>
-
+      <script src="main.js"></script>
+      <script src="menu.js"></script>
+    </main>
+  </body>
 </html>

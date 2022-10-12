@@ -1,7 +1,7 @@
 const questionContainer = document.getElementById('question-container');
 const question = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
-const controls = document.getAnimations('controls');
+const controls = document.querySelector('.controls');
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 
@@ -130,7 +130,7 @@ function startGame() {
     startButton.classList.add("hide");
     questionIndex = 0;
     questionContainer.classList.remove("hide");
-    setNextQuestion();
+    setNextQuestion(question);
 }
 
 function showQuestion(questionGeneral) {
@@ -141,7 +141,7 @@ function showQuestion(questionGeneral) {
         answerArray.push({ response: falseAnswer, correct: false })
     }
     answerArray.push({ response: questionGeneral.correct_answer, correct: true })
-    //HACER MÁS ADELANTE: desordenar las respuestas para que la Correcta no se sepa.
+    //HACER MÁS ADELANTE: desordenar las respuestas para que la Correcta no se sea la última.
 
     answerArray.forEach((answer) => {
         const button = document.createElement("button");
@@ -150,12 +150,13 @@ function showQuestion(questionGeneral) {
         if (answer.correct) {
             button.dataset.correct = true;
         }
-
+        button.addEventListener("click", selectAnswer);
         answerButtons.appendChild(button);
     });
 }
 
 function setNextQuestion() {
+    resetState();
     showQuestion(questions[questionIndex]);
 }
 
@@ -180,20 +181,19 @@ function selectAnswer(){
     
 }
 
-startButton.addEventListener("click", startGame);
 
 
-// nextButton.addEventListener("click", () => {
-//     currentQuestionIndex++;
-//     setNextQuestion();
-//   });
+
+nextButton.addEventListener("click", () => {
+    questionIndex++;
+    setNextQuestion();
+  });
   
-//   function resetState() {
-//     nextButton.classList.add("hide"); //escondemos el botón next
-//     while (answerButtonsElement.firstChild) {
-//       //bucle que se ejecuta si answerButtonsElemetnos
-//       //tiene un primer hijo
-//       //borramos el primer hijo de answerButtonsElements
-//       answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-//     }
-//   }
+  function resetState() {
+    nextButton.classList.add("hide");
+    while (answerButtons.firstChild) {
+      answerButtons.removeChild(answerButtons.firstChild);
+    }
+  }
+
+  startButton.addEventListener("click", startGame);
