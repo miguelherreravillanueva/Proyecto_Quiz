@@ -171,9 +171,9 @@ function selectAnswer(){
     Array.from(answerButtons.children).forEach((button) => {
         setStatusClass(button, button.dataset.correct);
     });
-    if (questions.length > questionIndex + 1){
+    if (questions.length > questionIndex + 1) {
         nextButton.classList.remove("hide");
-    } else{
+    } else {
         startButton.innerText = "Volver a comenzar";
         startButton.classList.remove("hide");
     }
@@ -182,3 +182,18 @@ function selectAnswer(){
 
 startButton.addEventListener("click", startGame);
 
+
+// nextButton.addEventListener("click", () => {
+//     currentQuestionIndex++;
+//     setNextQuestion();
+//   });
+  
+//   function resetState() {
+//     nextButton.classList.add("hide"); //escondemos el botón next
+//     while (answerButtonsElement.firstChild) {
+//       //bucle que se ejecuta si answerButtonsElemetnos
+//       //tiene un primer hijo
+//       //borramos el primer hijo de answerButtonsElements
+//       answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+//     }
+//   }
