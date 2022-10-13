@@ -121,7 +121,8 @@ startButton.addEventListener("click", startGame);
 btnFinal.addEventListener("click", function () {
     resultImage.classList.add("hide");
     finalText.innerHTML = "Tu nota es: " + nota;
-
+    btnFinal.innerText = "Jugar otra vezr";
+    btnFinal(startGame)
     //FALTA: cuando clique se convierta en Reset Botton
 
 })
