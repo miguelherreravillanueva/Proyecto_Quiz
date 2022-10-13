@@ -11,6 +11,7 @@ const noteElement = document.querySelector(".nota");
 const btnFinal = document.getElementById("btnFinal")
 const resultImage = document.getElementById("resultImage")
 const finalText = document.getElementById("finalText")
+const restartBtn = document.getElementById("restart-button")
 
 
 let questionIndex;
@@ -115,14 +116,23 @@ function resetState() {
     }
 }
 
-startButton.addEventListener("click", startGame);
+
 
 
 btnFinal.addEventListener("click", function () {
+    console.log("hola")
     resultImage.classList.add("hide");
     finalText.innerHTML = "Tu nota es: " + nota;
-    btnFinal.innerText = "Jugar otra vezr";
-    btnFinal(startGame)
-    //FALTA: cuando clique se convierta en Reset Botton
-
+    restartBtn.classList.remove("hide");
+    btnFinal.classList.add("hide");
+    btnFinal.classList.remove("btn");
+    btnFinal.classList.remove("btn-danger");
 })
+startButton.addEventListener("click", startGame);
+restartBtn.addEventListener("click", startGame);
+
+// Restaurar notas = 0
+// Esconder nextButton
+// CSS
+// LocalStorage
+// Añadir Bootstrap class a restartBtn (¿se rompera el hide?)
