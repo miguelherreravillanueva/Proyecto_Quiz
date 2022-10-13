@@ -7,8 +7,13 @@ const nextButton = document.getElementById("next-btn");
 const mainCard = document.getElementById("mainCard");
 const resultCard = document.getElementById("resultCard");
 const questionCard = document.getElementById("questionCard")
+const noteElement = document.querySelector(".nota");
+const btnFinal = document.getElementById("btnFinal")
+const resultImage = document.getElementById("resultImage")
+
 
 let questionIndex;
+let nota = 0;
 let questions = []
 
 
@@ -63,7 +68,22 @@ function showQuestion(questionGeneral) {
         if (answer.correct) {
             button.dataset.correct = true;
         }
-        button.addEventListener("click", selectAnswer);
+        button.addEventListener("click", function () {
+            if (button.dataset.correct == "true") {
+                nota++;
+                noteElement.innerHTML = "Tu puntuación: " + nota;
+             
+            } else {
+                if (nota != 0) {
+                    nota = nota - 0.5;
+                    noteElement.innerHTML = "Tu puntuación: " + nota;
+                } else {
+                    noteElement.innerHTML = "Tu puntuación: " + nota;
+                }
+            }
+
+            selectAnswer();
+        });
         answerButtons.appendChild(button);
     });
 }
@@ -82,7 +102,6 @@ function setStatusClass(element, correct) {
 }
 
 
-
 nextButton.addEventListener("click", () => {
     questionIndex++;
     setNextQuestion();
@@ -96,3 +115,13 @@ function resetState() {
 }
 
 startButton.addEventListener("click", startGame);
+
+
+btnFinal.addEventListener("click", function (){
+    resultImage.classList.add("hide");
+    btnFinal.innerHTML("Restart");
+    btnFinal.nota 
+    
+    //FALTA: cuando clica en el btnFinal que se cambie el innerHtML y muestre la nota. 
+
+})
