@@ -10,6 +10,7 @@ const questionCard = document.getElementById("questionCard")
 const noteElement = document.querySelector(".nota");
 const btnFinal = document.getElementById("btnFinal")
 const resultImage = document.getElementById("resultImage")
+const finalText = document.getElementById("finalText")
 
 
 let questionIndex;
@@ -72,7 +73,7 @@ function showQuestion(questionGeneral) {
             if (button.dataset.correct == "true") {
                 nota++;
                 noteElement.innerHTML = "Tu puntuación: " + nota;
-             
+
             } else {
                 if (nota != 0) {
                     nota = nota - 0.5;
@@ -117,11 +118,10 @@ function resetState() {
 startButton.addEventListener("click", startGame);
 
 
-btnFinal.addEventListener("click", function (){
+btnFinal.addEventListener("click", function () {
     resultImage.classList.add("hide");
-    btnFinal.innerHTML("Restart");
-    btnFinal.nota 
-    
-    //FALTA: cuando clica en el btnFinal que se cambie el innerHtML y muestre la nota. 
+    finalText.innerHTML = "Tu nota es: " + nota;
+
+    //FALTA: cuando clique se convierta en Reset Botton
 
 })
