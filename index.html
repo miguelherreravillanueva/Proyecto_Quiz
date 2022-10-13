@@ -30,25 +30,26 @@
     </header>
 
     <main>
-      <span id="mainCard">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-100">
-              <img src="assets/triviados.jpg.webp" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title">¡Que comience el juego!</h5>
-                <div class="controls">
-                   <button type="button" id="start-btn" class="btn btn-primary">
-                  ¡Vamos!
-                </button>
+        <span id="mainCard" >
+          <div  class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="assets/triviados.jpg.webp" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">¡Que comience el juego!</h5>
+                  <div class="controls">
+                     <button type="button" id="start-btn" class="btn btn-primary">
+                    ¡Vamos!
+                  </button>
+                </div>
               </div>
             </div>
+            </div>
           </div>
-        </div>
-      </span>
+        </span>
 
 
-      <span id="questionCard">
+      <span id="questionCard" class="hide">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
@@ -69,7 +70,7 @@
       </span>
 
     
-      <span id="resultCard">
+      <span id="resultCard" class="hide">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
@@ -88,25 +89,12 @@
         </div>
       </span>
 
-      -->
-
-      <!-- ¿Esto tiene que ir dentro de la Card o se enlaza directamente desde el .js? -->
-
-      <!-- <div id="question-container">
-        <br />
-        <div id="question"></div>
-        <div id="answer-buttons"></div>
-      </div> -->
-
-      <!-- <div class="controls">
-        <br />
-        <button id="start-btn">Comienzo</button>
-        <br />
-        <button id="next-btn" class="hide">Siguiente</button>
-      </div> -->
-
+        
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <script src="main.js"></script>
-      <script src="menu.js"></script>
+      <script src="api.js"></script>
     </main>
   </body>
 </html>
+
+
