@@ -18,6 +18,21 @@ img{
   color: gold;
   
 }
+
+#answer-buttons{
+ display: flex;
+ gap: 5px;
+ justify-content: center;
+}
+button{
+  padding: 5px;
+  
+
+}
+button:hover{
+  background-color: #888888;
+  
+}
 .card{
   box-shadow: 5px 10px #888888;
 }
@@ -31,3 +46,4 @@ img{
 #restart-button:hover{
   background-color: aquamarine;
 }
+

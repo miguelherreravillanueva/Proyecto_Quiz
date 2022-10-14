@@ -18,6 +18,8 @@ let nota = 0;
 let questions = [];
 
 function startGame() {
+  nota = 0
+  noteElement.innerHTML = "Tu puntuación: " + nota;
   resultCard.classList.add("hide");
   mainCard.classList.add("hide");
   nextButton.classList.remove("btn");
@@ -54,6 +56,7 @@ function showQuestion(questionGeneral) {
     answerArray.push({ response: falseAnswer, correct: false });
   }
   answerArray.push({ response: questionGeneral.correct_answer, correct: true });
+  answerArray.sort(function () { return Math.random() - 0.5 });
 
   answerArray.forEach((answer) => {
     const button = document.createElement("button");
@@ -117,7 +120,6 @@ btnFinal.addEventListener("click", function () {
 startButton.addEventListener("click", startGame);
 restartBtn.addEventListener("click", startGame);
 
-// Restaurar notas = 0
-// Esconder nextButton
+
 //Readme
-//Hacer que la respuesta correcta no sea siempre la última
+
