@@ -26,15 +26,16 @@ Para este proyecto hemos utilizado las tecnologías aprendidas hasta la fecha: H
 
 - Portada del quiz
 
-[foto] ()
+[foto] (http://127.0.0.1:5500/Proyecto.Quiz/index.html)
 
 - Sección Preguntas
 
-[foto] ()
+[foto] (http://127.0.0.1:5500/Proyecto.Quiz/index.html)
 
 - Sección Respuestas
 
-[foto] ()
+[foto] (http://127.0.0.1:5500/Proyecto.Quiz/index.html)
+[foto] (http://127.0.0.1:5500/Proyecto.Quiz/index.html)
 
 
 ----
