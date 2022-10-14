@@ -1,4 +1,4 @@
-# Proyecto.Quiz
+# Proyecto Quiz
 
 El siguiente proyecto colaborativo consta de la creación de un cuestionario (quiz) utilizando los conocimientos aprendidos hasta ahora, cumpliendo los siguientes requisitos:
 
@@ -26,18 +26,18 @@ Para este proyecto hemos utilizado las tecnologías aprendidas hasta la fecha: H
 
 - Portada del quiz
 
-[foto] (http://127.0.0.1:5500/Proyecto.Quiz/index.html)
+![foto] (http://127.0.0.1:5500/Proyecto.Quiz/index.html)
 
 - Sección Preguntas
 
-[foto] (http://127.0.0.1:5500/Proyecto.Quiz/index.html)
+![foto] (http://127.0.0.1:5500/Proyecto.Quiz/index.html)
 
 - Sección Respuestas
 
-[foto] (http://127.0.0.1:5500/Proyecto.Quiz/index.html)
-[foto] (http://127.0.0.1:5500/Proyecto.Quiz/index.html)
+![foto] (http://127.0.0.1:5500/Proyecto.Quiz/index.html)
+![foto] (http://127.0.0.1:5500/Proyecto.Quiz/index.html)
 
 
 ----
 
-Hecho por [Daniel Miguelez] (https://github.com/DanielMiguelez) y [Miguel Herrera] (https://github.com/miguelherreravillanueva)
+Hecho por [Daniel Miguelez](https://github.com/DanielMiguelez) y [Miguel Herrera](https://github.com/miguelherreravillanueva)
