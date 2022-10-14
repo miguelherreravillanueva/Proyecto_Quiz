@@ -17,20 +17,20 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-dark bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Proyecto Quiz ~Dani & Miguel~</a>
+    <nav class="navbar navbar-dark bg-success ">
+      <div class="container-fluid ">
+        <a class="navbar-brand " href="#">Proyecto Quiz ~Dani & Miguel~</a>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main >
     <span id="mainCard">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
+      <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center mt-5" >
+        <div class="col mb-5" >
+          <div class="card h-100 border border-dark border border-3 bg-success" >
             <img src="assets/triviados.jpg.webp" class="card-img-top" />
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 class="card-title">¡Que comience el juego!</h5>
               <div class="controls">
                 <button type="button" id="start-btn" class="btn btn-primary">
@@ -45,9 +45,9 @@
 
 
     <span id="questionCard" class="hide">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
+      <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center align-items-center mt-5">
+        <div class="col mb-5">
+          <div class="card h-100 border border-dark border border-3 bg-success">
             <div class="nota">
             </div>
             <img src="assets/FLZ336533ZCN3B52M43UXM2JFM.jpg" class="card-img-top" />
@@ -70,11 +70,11 @@
 
 
     <span id="resultCard" class="hide">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
+      <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center align-items-center mt-5">
+        <div class="col mb-5">
+          <div class="card h-100 border border-dark border border-3 bg-success">
             <img id="resultImage" src="assets/result_-rkmrc-1-600x240.jpg" class="card-img-top" />
-            <div class="card-body">
+            <div class="card-body text-center">
               <h5 id="finalText" class="card-title">Resultados</h5>
               <button type="reset" id="btnFinal" class="btn btn-danger"> Mira tu resultado</button>
               </button>

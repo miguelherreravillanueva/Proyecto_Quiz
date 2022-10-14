@@ -120,7 +120,6 @@ function resetState() {
 
 
 btnFinal.addEventListener("click", function () {
-    console.log("hola")
     resultImage.classList.add("hide");
     finalText.innerHTML = "Tu nota es: " + nota;
     restartBtn.classList.remove("hide");
