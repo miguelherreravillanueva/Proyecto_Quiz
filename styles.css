@@ -20,9 +20,9 @@ img{
 }
 
 #answer-buttons{
- display: flex;
- gap: 5px;
- justify-content: center;
+  display: flex;
+  
+  justify-content: space-around;
 }
 button{
   padding: 5px;

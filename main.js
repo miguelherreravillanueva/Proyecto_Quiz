@@ -117,9 +117,10 @@ btnFinal.addEventListener("click", function () {
   btnFinal.classList.remove("btn");
   btnFinal.classList.remove("btn-danger");
 });
+
 startButton.addEventListener("click", startGame);
 restartBtn.addEventListener("click", startGame);
 
 
-//Readme
+
 
