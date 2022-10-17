@@ -78,7 +78,6 @@ function showQuestion(questionGeneral) {
     button.addEventListener("click", function () {
       if (button.dataset.correct == "true") {
         nota++;
-        
         audioDiv.innerHTML = ` <audio autoplay>
         <source src="assets/correct.mp3" type="audio/mpeg">
         </audio>`;
@@ -140,7 +139,7 @@ btnFinal.addEventListener("click", function () {
   btnFinal.classList.remove("btn-danger");
   if (nota < 5) {
     imgFinal3.classList.remove("hide");
-  } else if (nota == 5 || nota < 8) {
+  } else if (nota == 5 || nota <= 8) {
     imgFinal2.classList.remove("hide");
   } else {
     imgFinal1.classList.remove("hide");
