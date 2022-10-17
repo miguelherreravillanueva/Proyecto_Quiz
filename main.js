@@ -15,14 +15,18 @@ const restartBtn = document.getElementById("restart-button");
 const imgFinal1 = document.getElementById("imgFinal1");
 const imgFinal2 = document.getElementById("imgFinal2");
 const imgFinal3 = document.getElementById("imgFinal3");
-
+const correct = new Audio("assets/correct.mp3");
+const audioDiv = document.querySelector(".audio-div");
 
 let questionIndex;
 let nota = 0;
 let questions = [];
 
 function startGame() {
-  nota = 0
+  nota = 0;
+  audioDiv.innerHTML = ` <audio autoplay>
+        <source src="assets/drama.mp3" type="audio/mpeg">
+        </audio>`;
   noteElement.innerHTML = "Tu puntuación: " + nota;
   resultCard.classList.add("hide");
   mainCard.classList.add("hide");
@@ -60,7 +64,9 @@ function showQuestion(questionGeneral) {
     answerArray.push({ response: falseAnswer, correct: false });
   }
   answerArray.push({ response: questionGeneral.correct_answer, correct: true });
-  answerArray.sort(function () { return Math.random() - 0.5 });
+  answerArray.sort(function () {
+    return Math.random() - 0.5;
+  });
 
   answerArray.forEach((answer) => {
     const button = document.createElement("button");
@@ -72,6 +78,11 @@ function showQuestion(questionGeneral) {
     button.addEventListener("click", function () {
       if (button.dataset.correct == "true") {
         nota++;
+        
+        audioDiv.innerHTML = ` <audio autoplay>
+        <source src="assets/correct.mp3" type="audio/mpeg">
+        </audio>`;
+       
         noteElement.innerHTML = "Tu puntuación: " + nota;
       } else {
         if (nota != 0) {
@@ -79,6 +90,9 @@ function showQuestion(questionGeneral) {
           noteElement.innerHTML = "Tu puntuación: " + nota;
         } else {
           noteElement.innerHTML = "Tu puntuación: " + nota;
+          audioDiv.innerHTML = ` <audio autoplay>
+          <source src="assets/false.mp3" type="audio/mpeg">
+          </audio>`;
         }
       }
 
@@ -96,7 +110,6 @@ function setNextQuestion() {
 function setStatusClass(element, correct) {
   if (correct) {
     element.classList.add("correct");
-    
   } else {
     element.classList.add("wrong");
   }
@@ -104,6 +117,9 @@ function setStatusClass(element, correct) {
 
 nextButton.addEventListener("click", () => {
   questionIndex++;
+  audioDiv.innerHTML = ` <audio autoplay>
+          <source src="assets/drama.mp3" type="audio/mpeg">
+          </audio>`;
 
   setNextQuestion();
 });
@@ -122,14 +138,13 @@ btnFinal.addEventListener("click", function () {
   btnFinal.classList.add("hide");
   btnFinal.classList.remove("btn");
   btnFinal.classList.remove("btn-danger");
-  if (nota <5){
+  if (nota < 5) {
     imgFinal3.classList.remove("hide");
-  }else if(nota == 5 || nota <8) {
-    imgFinal2.classList.remove("hide")
-  }else{
-      imgFinal1.classList.remove("hide")
+  } else if (nota == 5 || nota < 8) {
+    imgFinal2.classList.remove("hide");
+  } else {
+    imgFinal1.classList.remove("hide");
   }
-}
-);
+});
 startButton.addEventListener("click", startGame);
 restartBtn.addEventListener("click", startGame);
