@@ -31,4 +31,4 @@ Para este proyecto hemos utilizado las tecnologías aprendidas hasta la fecha: H
 
 ----
 
-Hecho por [Daniel Miguelez](https://github.com/DanielMiguelez) y [Miguel Herrera](https://github.com/miguelherreravillanueva) :) :)
+Hecho por [Daniel Miguelez](https://github.com/DanielMiguelez) y [Miguel Herrera](https://github.com/miguelherreravillanueva)
