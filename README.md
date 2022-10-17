@@ -1,4 +1,4 @@
-# Proyecto.Quiz
+# Proyecto Quiz 🤝
 
 El siguiente proyecto colaborativo consta de la creación de un cuestionario (quiz) utilizando los conocimientos aprendidos hasta ahora, cumpliendo los siguientes requisitos:
 
@@ -10,33 +10,25 @@ El siguiente proyecto colaborativo consta de la creación de un cuestionario (qu
 - Gestión del proyecto de manera colaborativa (repositorio compartido, como colaboradores, en Github).
 - Readme con explicación del proyecto.
 
-## Desarrollo del proyecto
+## Desarrollo del proyecto 🔧
 
 El proyecto ha sido realizado durante el plazo de una semana, de manera colaborativa. 
 Para ello hemos creado tres archivos principales desde los que hemos ido trabajando: index.html, main.js, y styles.css.
 Tras crear el cuestionario con estilos de Bootstrap en el index.html, hemos implementado todas las funciones necesarias para ejecutar el código en main.js (compilar información, creación de formularios, pintar resultados). 
 
 
-### Tecnologías utilizadas
+### Tecnologías utilizadas 💻
 
 Para este proyecto hemos utilizado las tecnologías aprendidas hasta la fecha: HTML, CSS y JS (uso de SPA y API).
 
 
-### Preview
+### Preview 
 
 - Portada del quiz
 
-[foto] ()
-
-- Sección Preguntas
-
-[foto] ()
-
-- Sección Respuestas
-
-[foto] ()
+![foto](assets/b1010ca6-031b-40f8-af37-e2b15d198dcc.gif)
 
 
 ----
 
-Hecho por [Daniel Miguelez] (https://github.com/DanielMiguelez) y [Miguel Herrera] (https://github.com/miguelherreravillanueva)
+Hecho por [Daniel Miguelez](https://github.com/DanielMiguelez) y [Miguel Herrera](https://github.com/miguelherreravillanueva)
