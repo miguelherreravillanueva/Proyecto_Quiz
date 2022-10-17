@@ -10,6 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
+    <link rel="stylesheet" href="bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
@@ -17,18 +18,21 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-dark bg-success ">
-      <div class="container-fluid ">
-        <a class="navbar-brand " href="#">Proyecto Quiz ~Dani & Miguel~</a>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid d-flex justify-content-center ">
+        <a class="navbar-brand" href="#">Proyecto Quiz ~Dani & Miguel~</a>
       </div>
     </nav>
+    
   </header>
 
-  <main >
+  <main>
+
     <span id="mainCard">
-      <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center mt-5 " >
-        <div class="col mb-5" >
-          <div class="card h-100 border border-dark border border-3 bg-success" >
+      <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center mt-5 ">
+        <div class="col mb-5">
+          <div class="card h-100 border border-dark border border-3 bg-secondary ">
             <img src="assets/triviados.jpg.webp" class="card-img-top" />
             <div class="card-body text-center">
               <h5 class="card-title">¡Que comience el juego!</h5>
@@ -47,8 +51,8 @@
     <span id="questionCard" class="hide">
       <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center align-items-center mt-5">
         <div class="col mb-5">
-          <div class="card h-100 border border-dark border border-3 bg-success">
-            <div class="nota">
+          <div class="card h-100 border border-dark border border-3 bg-secondary">
+            <div class="nota d-flex justify-content-center mt-2 mb-2" >
             </div>
             <img src="assets/FLZ336533ZCN3B52M43UXM2JFM.jpg" class="card-img-top" />
             <div class="card-body text-center">
@@ -60,7 +64,7 @@
                   <div id="answer-buttons"></div>
                 </div>
                 <br>
-                <button type="button" id="next-btn" class="hide btn btn-primary">Siguiente</button>
+                <button type="button" id="next-btn" class="btn btn-outline-light bg-primary">Siguiente</button>
               </div>
             </div>
           </div>
@@ -72,11 +76,14 @@
     <span id="resultCard" class="hide">
       <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center align-items-center mt-5">
         <div class="col mb-5">
-          <div class="card h-100 border border-dark border border-3 bg-success">
+          <div class="card h-100 border border-dark border border-3 bg-secondary">
             <img id="resultImage" src="assets/result_-rkmrc-1-600x240.jpg" class="card-img-top" />
             <div class="card-body text-center">
+              <img src="assets/f.elconfidencial.com_original_c51_01d_006_c5101d006a60de9716c66f571b63fd62.jpg" alt="" class="hide" id="imgFinal1">
+              <img src="assets/carlos-sobera_20984a22_1280x720.jpg" alt="" class="hide" id="imgFinal2">
+              <img src="assets/Carlos-Sobera-1-e1645175720834.jpg" alt="" class="hide" id="imgFinal3">
               <h5 id="finalText" class="card-title">Resultados</h5>
-              <button type="reset" id="btnFinal" class="btn btn-danger"> Mira tu resultado</button>
+              <button type="reset" id="btnFinal" class="btn btn-danger">Mira tu resultado</button>
               </button>
               <button id="restart-button" class="hide">Volver a jugar </button>
             </div>

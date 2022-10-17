@@ -12,6 +12,10 @@ const btnFinal = document.getElementById("btnFinal");
 const resultImage = document.getElementById("resultImage");
 const finalText = document.getElementById("finalText");
 const restartBtn = document.getElementById("restart-button");
+const imgFinal1 = document.getElementById("imgFinal1");
+const imgFinal2 = document.getElementById("imgFinal2");
+const imgFinal3 = document.getElementById("imgFinal3");
+
 
 let questionIndex;
 let nota = 0;
@@ -92,6 +96,7 @@ function setNextQuestion() {
 function setStatusClass(element, correct) {
   if (correct) {
     element.classList.add("correct");
+    
   } else {
     element.classList.add("wrong");
   }
@@ -99,6 +104,7 @@ function setStatusClass(element, correct) {
 
 nextButton.addEventListener("click", () => {
   questionIndex++;
+
   setNextQuestion();
 });
 
@@ -116,10 +122,14 @@ btnFinal.addEventListener("click", function () {
   btnFinal.classList.add("hide");
   btnFinal.classList.remove("btn");
   btnFinal.classList.remove("btn-danger");
-});
+  if (nota <5){
+    imgFinal3.classList.remove("hide");
+  }else if(nota == 5 || nota <8) {
+    imgFinal2.classList.remove("hide")
+  }else{
+      imgFinal1.classList.remove("hide")
+  }
+}
+);
 startButton.addEventListener("click", startGame);
 restartBtn.addEventListener("click", startGame);
-
-
-//Readme
-
