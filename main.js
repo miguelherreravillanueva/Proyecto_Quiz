@@ -50,12 +50,20 @@ function selectAnswer() {
   if (questions.length > questionIndex + 1) {
     nextButton.classList.remove("hide");
   } else {
+    console.log("estas entrando")
     startButton.innerText = "Volver a comenzar";
-    startButton.classList.remove("hide");
     resultCard.classList.remove("hide");
+    resultImage.classList.remove("hide");
+    btnFinal.classList.remove("hide");
     questionCard.classList.add("hide");
+    imgFinal3.classList.add("hide");
+    imgFinal2.classList.add("hide");
+    imgFinal1.classList.add("hide");
+    finalText.innerHTML = "";
+    restartBtn.classList.add("hide");
   }
 }
+
 function showQuestion(questionGeneral) {
   question.innerText = questionGeneral.question;
 
@@ -75,13 +83,15 @@ function showQuestion(questionGeneral) {
     if (answer.correct) {
       button.dataset.correct = true;
     }
+
     button.addEventListener("click", function () {
       if (button.dataset.correct == "true") {
+        console.log('entras', nota)
         nota++;
         audioDiv.innerHTML = ` <audio autoplay>
         <source src="assets/correct.mp3" type="audio/mpeg">
         </audio>`;
-       
+
         noteElement.innerHTML = "Tu puntuación: " + nota;
       } else {
         if (nota != 0) {
@@ -102,6 +112,7 @@ function showQuestion(questionGeneral) {
 }
 
 function setNextQuestion() {
+  console.log(nota)
   resetState();
   showQuestion(questions[questionIndex]);
 }
@@ -145,5 +156,6 @@ btnFinal.addEventListener("click", function () {
     imgFinal1.classList.remove("hide");
   }
 });
+
 startButton.addEventListener("click", startGame);
 restartBtn.addEventListener("click", startGame);
