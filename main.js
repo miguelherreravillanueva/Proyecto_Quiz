@@ -86,7 +86,6 @@ function showQuestion(questionGeneral) {
 
     button.addEventListener("click", function () {
       if (button.dataset.correct == "true") {
-        console.log('entras', nota)
         nota++;
         audioDiv.innerHTML = ` <audio autoplay>
         <source src="assets/correct.mp3" type="audio/mpeg">
