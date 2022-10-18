@@ -19,12 +19,12 @@ Tras crear el cuestionario con estilos de Bootstrap en el index.html, hemos impl
 
 ### Tecnologías utilizadas 💻
 
-Para este proyecto hemos utilizado las tecnologías aprendidas hasta la fecha: HTML, CSS y JS (uso de SPA y API).
+Para este proyecto hemos utilizado las tecnologías aprendidas hasta la fecha: HTML, CSS y JS (uso de SPA y API), y framework de CSS(Bootstrap).
 
 
 ### Preview 
 
-- Portada del quiz
+- Vista general del quiz
 
 ![foto](assets/e7802fb5-d886-4fda-8423-e84503abc821.gif)
 
