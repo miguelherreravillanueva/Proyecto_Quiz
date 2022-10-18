@@ -12,8 +12,7 @@ body {
 }
 
 img {
-  width: 200px;
-  height: 300px;
+  object-fit: cover;
 }
 #imgFinal1{
   height: 300px;

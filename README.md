@@ -26,7 +26,7 @@ Para este proyecto hemos utilizado las tecnologías aprendidas hasta la fecha: H
 
 - Portada del quiz
 
-![foto](assets/b1010ca6-031b-40f8-af37-e2b15d198dcc.gif)
+![foto](assets/e7802fb5-d886-4fda-8423-e84503abc821.gif)
 
 
 ----
