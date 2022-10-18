@@ -1,4 +1,3 @@
-const questionContainer = document.getElementById("question-container");
 const question = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const controls = document.querySelector(".controls");
@@ -15,7 +14,6 @@ const restartBtn = document.getElementById("restart-button");
 const imgFinal1 = document.getElementById("imgFinal1");
 const imgFinal2 = document.getElementById("imgFinal2");
 const imgFinal3 = document.getElementById("imgFinal3");
-const correct = new Audio("assets/correct.mp3");
 const audioDiv = document.querySelector(".audio-div");
 
 let questionIndex;
@@ -50,7 +48,6 @@ function selectAnswer() {
   if (questions.length > questionIndex + 1) {
     nextButton.classList.remove("hide");
   } else {
-    console.log("estas entrando")
     startButton.innerText = "Volver a comenzar";
     resultCard.classList.remove("hide");
     resultImage.classList.remove("hide");
@@ -111,7 +108,6 @@ function showQuestion(questionGeneral) {
 }
 
 function setNextQuestion() {
-  console.log(nota)
   resetState();
   showQuestion(questions[questionIndex]);
 }
@@ -129,7 +125,6 @@ nextButton.addEventListener("click", () => {
   audioDiv.innerHTML = ` <audio autoplay>
           <source src="assets/drama.mp3" type="audio/mpeg">
           </audio>`;
-
   setNextQuestion();
 });
 
