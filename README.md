@@ -24,7 +24,7 @@ Para este proyecto hemos utilizado las tecnologías aprendidas hasta la fecha: H
 
 ### Preview 
 
-- Portada del quiz
+- Vista general del quiz
 
 ![foto](assets/e7802fb5-d886-4fda-8423-e84503abc821.gif)
 
