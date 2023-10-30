@@ -30,7 +30,7 @@
     <li><a href="#future-roadmap">Future Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#preview">Preview</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -118,7 +118,7 @@ This project is under license of Miguel Herrera and Daniel Miguelez.
 
 
 
-### Preview 
+## Preview 
 
 - Vista general del quiz
 
@@ -126,5 +126,7 @@ This project is under license of Miguel Herrera and Daniel Miguelez.
 
 
 ----
+
+## Contact
 
 Made by [Daniel Miguelez](https://github.com/DanielMiguelez) & [Miguel Herrera](https://github.com/miguelherreravillanueva)
