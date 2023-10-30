@@ -108,6 +108,14 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- PREVIEW -->
+
+## Preview 
+
+- Vista general del quiz
+
+![foto](assets/e7802fb5-d886-4fda-8423-e84503abc821.gif)
+
 
 <!-- LICENSE -->
 ## License
@@ -118,14 +126,6 @@ This project is under license of Miguel Herrera and Daniel Miguelez.
 
 
 
-## Preview 
-
-- Vista general del quiz
-
-![foto](assets/e7802fb5-d886-4fda-8423-e84503abc821.gif)
-
-
-----
 
 ## Contact
 
