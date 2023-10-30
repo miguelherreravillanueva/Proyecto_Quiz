@@ -61,6 +61,63 @@ After creating the questionnaire with Bootstrap styles in index.html, we impleme
 <img align="center" alt="Rafa-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"><img align="center" alt="Rafa-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 
 
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Installation
+
+_Below is an example of how you can instruct your audience on installing and setting up your app.
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/miguelherreravillanueva/Proyecto_Quiz
+   ```
+
+2. Ready to start!
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- FUTURE -->
+## Future Roadmap
+
+- [ ] Keep perfectioning the page
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/YourName`)
+3. Commit your Changes (`git commit -m 'Add some YourName'`)
+4. Push to the Branch (`git push origin feature/YourName`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- LICENSE -->
+## License
+
+This project is under license of Miguel Herrera and Daniel Miguelez.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 ### Preview 
 
 - Vista general del quiz
