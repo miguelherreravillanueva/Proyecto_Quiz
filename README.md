@@ -117,16 +117,19 @@ Don't forget to give the project a star! Thanks again!
 ![foto](assets/e7802fb5-d886-4fda-8423-e84503abc821.gif)
 
 
+
 <!-- LICENSE -->
 ## License
 
-This project is under license of Miguel Herrera and Daniel Miguelez.
+This project is under license of [Miguel Herrera](https://github.com/miguelherreravillanueva) & [Daniel Miguelez](https://github.com/DanielMiguelez)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTACT -->
+## Contact 
+  <p align="center">
+<a href = "mailto:mirkouda@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+    <a href="https://www.linkedin.com/in/mherrevi/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+</p>
 
-
-
-## Contact
-
-Made by [Daniel Miguelez](https://github.com/DanielMiguelez) & [Miguel Herrera](https://github.com/miguelherreravillanueva)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
